@@ -49,7 +49,10 @@ var settings = module.exports = {
     // Serve up the welcome page
     httpStatic: path.join(__dirname,"public"),
 
-    functionGlobalContext: { moment : require("moment") },
+    functionGlobalContext: {
+    	moment : require("moment"),
+    	itunesconnect : require("itunesconnect")
+	},
 
     storageModule: require("./couchstorage")
 }
