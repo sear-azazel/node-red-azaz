@@ -55,7 +55,8 @@ var settings = module.exports = {
     	moment : require("moment"),
     	itunesconnect : require("itunesconnectanalytics"),
     	wget : require("node-wget"),
-    	fs : require("fs")
+    	fs : require("fs"),
+    	request : require("request")
 	},
 
     storageModule: require("./couchstorage")
