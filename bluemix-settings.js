@@ -54,7 +54,8 @@ var settings = module.exports = {
     functionGlobalContext: {
     	moment : require("moment"),
     	itunesconnect : require("itunesconnectanalytics"),
-    	wget : require("node-wget")
+    	wget : require("node-wget"),
+    	fs : require("fs")
 	},
 
     storageModule: require("./couchstorage")
