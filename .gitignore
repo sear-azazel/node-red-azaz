@@ -1,1 +1,4 @@
-launchConfigurations/
+.DS_store
+.npm
+.project
+node_modules

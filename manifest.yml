@@ -1,10 +1,12 @@
 applications:
-- path: .
-  memory: 256M
+- memory: 256M
+  env:
+    OPTIMIZE_MEMORY: true
   instances: 1
   domain: mybluemix.net
   name: node-red-azaz
   host: node-red-azaz
   disk_quota: 1024M
+  command: node index.js --settings ./bluemix-settings.js -v
   services:
   - node-red-azaz-cloudantNoSQLDB
